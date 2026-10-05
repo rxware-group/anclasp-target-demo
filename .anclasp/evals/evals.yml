@@ -1,0 +1,6 @@
+apiVersion: anclasp/v1
+kind: EvalSuite
+cases:
+  - id: always-fail
+    path: .anclasp/evals/cases/always-fail.yml
+    node: draft_ux
