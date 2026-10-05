@@ -1,0 +1,3 @@
+apiVersion: anclasp/v1
+kind: RiskMap
+paths: []
