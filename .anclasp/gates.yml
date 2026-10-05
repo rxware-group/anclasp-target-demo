@@ -1,0 +1,9 @@
+apiVersion: anclasp/v1
+kind: Gate
+gates:
+  - id: open_questions
+    script: governance://gates/open_questions
+    when: accept_intent
+  - id: identity
+    script: governance://gates/identity
+    when: implement
