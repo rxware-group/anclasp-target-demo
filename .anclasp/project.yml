@@ -1,0 +1,41 @@
+apiVersion: anclasp/v1
+kind: Project
+metadata:
+  id: anclasp-target-demo
+  version: 1
+spec:
+  display_name: anclasp-target-demo
+  description: pilot
+  surface: service
+  language: zh-CN
+  timezone: Asia/Shanghai
+  data_classification: internal
+  model_endpoint: corp-default
+  host: github-com
+  repo:
+    url: https://github.com/rxware-group/anclasp-target-demo.git
+    default_branch: main
+  stack:
+    languages: [typescript]
+    frameworks: []
+    build: npm run build
+    test: npm test
+    lint: npm run lint
+  owners:
+    product: product-owner
+    tech: tech-lead
+    release: release-manager
+    code: [code-owner]
+  members:
+    - user: github:1
+      roles: [platform-admin]
+  workflows:
+    - id: default
+      path: .anclasp/workflows/default.yml
+      default: true
+  status: active
+  concurrency:
+    max_inflight: 3
+    max_open_reviews_per_owner: 2
+  sample_rate:
+    low: 1
