@@ -27,7 +27,7 @@ spec:
     release: release-manager
     code: [code-owner]
   members:
-    - user: github:1
+    - user: github:310162014
       roles: [platform-admin]
   workflows:
     - id: default
