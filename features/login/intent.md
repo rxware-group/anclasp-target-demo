@@ -2,7 +2,7 @@
 kind: intent
 id: claim-status
 project: anclasp-target-demo
-status: draft
+status: accepted
 risk: low
 related_repos: []
 open_questions: []
